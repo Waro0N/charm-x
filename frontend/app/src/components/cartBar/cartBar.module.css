@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  background-color: #e3e3e3;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+
+  /* border: 1px solid red; */
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.searchContainer:hover {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+
+.searchField {
+  border: none;
+  border-bottom: 1px solid transparent;
+  background-color: #e3e3e3;
+}
+
+.searchField:focus {
+  border: none;
+  outline: none;
+}
+
+.loginContainer {
+  display: flex;
+}
+
+.loginButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  background-color: #e3e3e3;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  color: grey;
+}

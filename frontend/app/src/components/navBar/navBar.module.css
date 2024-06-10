@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  background-color: #242323;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80px;
+}
+
+.navItemsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  letter-spacing: 3px;
+  height: 50px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+.navItems {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: grey;
+  height: 50px;
+  padding-right: 60px;
+  padding-left: 60px;
+  cursor: pointer;
+  position: relative;
+}
+
+.navItems:hover {
+  color: white;
+  background-color: #111;
+}
