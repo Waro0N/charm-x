@@ -1,6 +1,11 @@
 * {
-  font-family: "Inter";
+  font-family: cursive;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
 }

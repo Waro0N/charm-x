@@ -1,0 +1,107 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  grid-template-rows: 1fr 3fr 10fr;
+  display: grid;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.crumBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.productImage {
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.productName {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.selectSize {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.productTextSize {
+  font-size: 25px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addtoCartContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.fieldContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.selectSizeField {
+  width: 355px;
+  height: 50px;
+  padding-left: 20px;
+}
+
+.selectQuantity {
+  width: 76px;
+  height: 50px;
+  padding-left: 20px;
+}
+
+.addToCartButton {
+  border: none;
+  background-color: #bdd7d0;
+  color: white;
+  width: 276px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.likeButton {
+  background-color: white;
+  border-color: #bdd7d0;
+  border-style: solid;
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.buyButton {
+  border: none;
+  width: 355px;
+  height: 40px;
+  background-color: #242323;
+  color: white;
+  cursor: pointer;
+}

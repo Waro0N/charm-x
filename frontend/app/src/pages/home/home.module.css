@@ -1,0 +1,123 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  grid-template-rows: 1fr 6fr 4fr 10fr 4fr 3fr;
+  display: grid;
+}
+
+.itemPics {
+  display: grid;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+.smart {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.smartText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe9e3;
+  width: 471px;
+}
+
+.elegant {
+  display: grid;
+  background-color: #d4e4e0;
+}
+
+.elegantHeading {
+  color: white;
+}
+
+.elegantContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.elegantText {
+  display: flex;
+  background-color: #a3c7bd;
+  width: 471px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrivalContainer {
+  display: grid;
+}
+
+.ArrivalHeading {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0px;
+}
+
+.arrivalItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cards {
+  padding-right: 20px;
+}
+
+.salesContainer {
+  margin-top: 10px;
+  display: flex;
+  background-color: #242323;
+  height: 1384px;
+  justify-content: center;
+}
+.salesItem {
+  display: flex;
+  flex-direction: column;
+}
+.offerHeading {
+  margin-top: 90px;
+  color: white;
+  font-size: 60px;
+}
+
+.salesImage {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.imageStyle {
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+}
+
+.purchaseContent {
+  display: flex;
+  justify-content: center;
+  width: 542px;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.purchaseheading {
+  color: white;
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.purchaseText {
+  color: white;
+  font-size: 17px;
+  margin-top: 60px;
+}
+
+p {
+  text-align: center;
+}

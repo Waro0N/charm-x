@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 317px;
+  height: 512px;
+  cursor: pointer;
+}
+
+.detailsItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dfdede;
+  width: 315px;
+  height: 100px;
+}
+
+.detailItemHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d0c2bf;
+  width: 315px;
+  height: 100px;
+}
