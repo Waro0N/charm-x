@@ -1,19 +1,25 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import CustomUser
+from .models import CustomUser, AddressData
 from .form import CustomUserCreationForm
 # Register your models here.
 class CustomUserAdmin(UserAdmin):
     model=CustomUser
     add_form=CustomUserCreationForm
 
-    fieldsets =(
+    fieldsets = (
         *UserAdmin.fieldsets,
+        # (
+        #     "user Data", {
+        #         "fields": ("address",)
+        #     }
+        # ),
         (
-            "user Data" , {
-                "fields" : ("address", "stateField" , "city")
+            "order_data", {
+                "fields": ("is_first_order",)
             }
         )
     )
 
 admin.site.register(CustomUser, CustomUserAdmin)
+admin.site.register(AddressData)
