@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../assets/images/adminBackground.png");
+}
+
+.loginContainer {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  background-color: #24232396;
+  border: 1px white solid;
+  border-radius: 10px;
+  box-shadow: #242323;
+  height: 400px;
+  width: 400px;
+}
+
+.Content {
+  padding: 20px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+}
+
+.WelcomeText {
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.inputFields {
+  padding: 10px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.inputs {
+  height: 40px;
+  text-indent: 10px;
+}
+
+.label {
+  color: white;
+}
+
+.loginButtonContainer {
+  display: flex;
+  padding: 10px 10px 10px 10px;
+}
+
+.insideButton {
+  display: flex;
+  gap: 1px;
+  justify-content: center;
+}
+
+.loginButton {
+  border: none;
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #bdd7d0;
+}
+
+.loginButton:hover {
+  background-color: #242323;
+  color: white;
+  border: 1px white solid;
+}

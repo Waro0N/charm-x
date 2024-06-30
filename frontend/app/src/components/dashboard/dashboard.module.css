@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr 2fr;
+}
+.header {
+  padding: 20px;
+}
+
+.cardsItems {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.summaryContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.revenueContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.topProductContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

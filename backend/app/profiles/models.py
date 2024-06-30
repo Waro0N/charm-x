@@ -2,10 +2,6 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
-
-
-
-
 class CustomUser(AbstractUser):
     
     is_first_order = models.BooleanField(default=False)
@@ -21,5 +17,3 @@ class AddressData(models.Model):
 
     def __str__(self):
         return str(self.address)
-    
-    

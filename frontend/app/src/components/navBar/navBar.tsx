@@ -24,7 +24,7 @@ const NavBar = () => {
             {showMenu && <CollectionMenu />}
           </div>
 
-          <a className={styles.navItems} href="/">
+          <a className={styles.navItems} href="/product">
             ABOUT
           </a>
           <a className={styles.navItems} href="/">

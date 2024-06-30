@@ -14,6 +14,7 @@ class Product(models.Model):
     price = models.IntegerField(blank=True, null=True)
     description = models.TextField()
     # size = models.ForeignKey(ProductSize,on_delete=models.CASCADE, default=None, blank=True, null=True)
+    is_active = models.BooleanField(default=False)
     supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE, default=None, blank=True, null=True)
     created_at = models.DateTimeField(auto_now=True)
 

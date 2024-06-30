@@ -1,0 +1,26 @@
+.itemButtons {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  color: grey;
+  height: 40px;
+  width: 200px;
+}
+
+.activeButton {
+  background-color: #242323;
+  color: white;
+  border-radius: 10px;
+  /* background-color: white; */
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+  /* color: grey; */
+  height: 40px;
+  width: 200px;
+}
+
+.itemButtons:hover {
+  background-color: grey;
+  border-radius: 10px;
+  color: white;
+}

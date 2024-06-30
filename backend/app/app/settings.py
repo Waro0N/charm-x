@@ -12,9 +12,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+from corsheaders.defaults import default_headers
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,8 +28,36 @@ SECRET_KEY = 'django-insecure-$ckp1#ngs5_5inaj*+$z^$rpng2kv542^4m)vv+k^(_albe934
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+CORS_ALLOWED_HEADERS = [
+    'Authorization',  # Add the headers you need to allow
+    'Content-Type',
+    # ...
+]
+# CORS_ALLOW_METHODS = [
+#     'DELETE',
+#     'GET',
+#     'OPTIONS',
+#     'PATCH',
+#     'POST',
+#     'PUT',
+# ]
 
+APPEND_SLASH = False
+
+CORS_ALLOW_HEADERS = default_headers + (
+    'credentials',
+    'x-websocket-extensions',
+    'x-websocket-version',
+    'x-websocket-protocol',
+    'access-control-allow-origin',
+)
+
+# CORS_ORIGIN_WHITELIST = ['http://localhost:5173','http://127.0.0.1:5173']
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173','http://127.0.0.1:5173',
+]
 
 # Application definition
 
@@ -38,15 +68,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'corsheaders',
     'profiles',
     'suppliers',
     'orders',
     'productReviews',
-    'products'
+    'products',
+    
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -84,6 +116,22 @@ TEMPLATES = [
         },
     },
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
+        # 'drf_renderer_xlsx.renderers.XLSXRenderer',
+    ],
+
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ],
+    # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    # 'PAGE_SIZE': 10,
+}
 
 WSGI_APPLICATION = 'app.wsgi.application'
 AUTH_USER_MODEL="profiles.CustomUser"

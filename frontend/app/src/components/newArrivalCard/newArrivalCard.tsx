@@ -7,8 +7,8 @@ const NewArrivalCard = () => {
   return (
     <>
       <div
-        onMouseEnter={(e) => setOnHover(true)}
-        onMouseLeave={(e) => setOnHover(false)}
+        onMouseEnter={() => setOnHover(true)}
+        onMouseLeave={() => setOnHover(false)}
         className={styles.container}
       >
         <img src={img} width="317px" height="412px" />
